@@ -1,0 +1,69 @@
+#05
+;FF     PUBLIC
+02FCFBA_?DATA
+02FCFBE_?DATAL
+02FCFBE_?DATS
+02FCFBE_?INIS
+02FCFBE_?INIT
+02FCFBE_?INITL
+0100002_?RLINIT
+0100002_?R_INIS
+0100008_?R_INIT
+02FCF98_@BRKADR
+02FCF86_@DIVR
+02FCF80_@FNCENT
+02FCF00_@FNCTBL
+02FCF8A_@LDIVR
+0000000_@MAA
+02FCFBA_@MEMBTM
+02FCF9A_@MEMTOP
+02FCF82_@SEED
+00FFEE0_@STBEG
+00FCFBE_@STEND
+02FCF92_@TOKPTR
+0100184_@cend
+01000D8_@cstart
+010002C_@vect2c
+010003A_@vect3a
+010038A_R_CGC_Create
+01003A1_R_CGC_Get_ResetSource
+01003EE_R_KEY_Create
+010042C_R_KEY_Start
+0100433_R_KEY_Stop
+01003EA_R_PORT_7_ScanLine_Input
+01003E4_R_PORT_7_ScanLine_Output
+01003A6_R_PORT_Create
+01003BE_R_PORT_ScanData_High
+01003BA_R_PORT_ScanData_Low
+01003C2_R_PORT_ScanLine_Input
+01003D1_R_PORT_ScanLine_Output
+01003D8_R_PORT_ScanLine_SetScan
+010035B_R_Systeminit
+010048F_R_TAU0_Channel0_Start
+01004A0_R_TAU0_Channel0_Stop
+010043A_R_TAU0_Create
+0100341_R_Wait
+02FCF96_errno
+01004B1_exit
+010037F_hdwinit
+02FCFBB_keyevent
+010018B_main
+02FCFBC_pressTypeRow
+02FCFBA_pressed_key
+02FCFBD_scanInput
+;FF     @cstart
+;FF     r_main
+;FF     r_systeminit
+;FF     r_cg_cgc
+;FF     r_cg_cgc_user
+;FF     Port
+;FF     KEY_INTERRUPT
+;FF     KEY_INTERRUPT_USER
+<0100184_r_key_interrupt
+;FF     Timer
+;FF     Timer_User
+<0100189_r_tau0_channel0_interrupt
+;FF     exit
+;FF     @rom
+=
+

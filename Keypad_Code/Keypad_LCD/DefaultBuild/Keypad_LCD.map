@@ -1,0 +1,380 @@
+
+
+
+78K0R Linker V1.60                            Date:22 Aug 2019 Page:   1
+
+Command:   -yC:\Program Files (x86)\Renesas Electronics\CubeSuite+\Devic
+           e\RL78\Devicefile -_msgoff -dr_lk.dr -oDefaultBuild\Keypad_LC
+           D.lmf -gi00000000000000000000h -go84h,17E00h,512 -gb0EFFFF8H 
+           -mi0 -s -pDefaultBuild\Keypad_LCD.map C:\Program Files (x86)\
+           Renesas Electronics\CubeSuite+\CA78K0R\V1.40\lib78k0r\s0rll.r
+           el DefaultBuild\r_main.rel DefaultBuild\r_systeminit.rel Defa
+           ultBuild\r_cg_cgc.rel DefaultBuild\r_cg_cgc_user.rel DefaultB
+           uild\Timer.rel DefaultBuild\Timer_User.rel DefaultBuild\Port.
+           rel -bcl78m -bcl78mf -iC:\Program Files (x86)\Renesas Electro
+           nics\CubeSuite+\CA78K0R\V1.40\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\Keypad_LCD.lmf
+Map-file:  DefaultBuild\Keypad_LCD.map
+Direc-file:r_lk.dr
+Directive: ;/***********************************************************
+           ***********************************************************
+           ;* DISCLAIMER
+           ;* This software is supplied by Renesas Electronics Corporati
+           on and is only 
+           ;* intended for use with Renesas products. No other uses are 
+           authorized. This 
+           ;* software is owned by Renesas Electronics Corporation and i
+           s protected under 
+           ;* all applicable laws, including copyright laws.
+           ;* THIS SOFTWARE IS PROVIDED "AS IS" AND RENESAS MAKES NO WAR
+           RANTIES REGARDING 
+           ;* THIS SOFTWARE, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCL
+           UDING BUT NOT 
+           ;* LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PA
+           RTICULAR PURPOSE 
+           ;* AND NON-INFRINGEMENT.  ALL SUCH WARRANTIES ARE EXPRESSLY D
+           ISCLAIMED.
+           ;* TO THE MAXIMUM EXTENT PERMITTED NOT PROHIBITED BY LAW, NEI
+           THER RENESAS 
+           ;* ELECTRONICS CORPORATION NOR ANY OF ITS AFFILIATED COMPANIE
+           S SHALL BE LIABLE 
+           ;* FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUEN
+           TIAL DAMAGES FOR 
+           ;* ANY REASON RELATED TO THIS SOFTWARE, EVEN IF RENESAS OR IT
+           S AFFILIATES HAVE 
+           ;* BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+           ;* Renesas reserves the right, without notice, to make change
+           s to this software 
+           ;* and to discontinue the availability of this software.  By 
+           using this software, 
+           ;* you agree to the additional terms and conditions found by 
+           accessing the 
+           ;* following link:
+           ;* http://www.renesas.com/disclaimer
+           ;*
+           ;* Copyright (C) 2011 Renesas Electronics Corporation. All ri
+           ghts reserved.
+           ;************************************************************
+           **********************************************************/
+           
+           ;/*
+           ;************************************************************
+           ***********************************************************
+           ;* File Name    : r_lk.dr
+           ;* Version      : CodeGenerator for RL78/G14 V1.01.01 [11 Oct
+            2011]
+           ;* Device(s)    : R5F104FF
+           ;* Tool-Chain   : CA78K0R
+           ;* Description  : This is the link file.
+           ;* Creation Date: 8/20/2019
+           ;************************************************************
+           ***********************************************************
+           ;*/
+           ; [Sample of Link Directive File]
+           ; ***********************************************************
+           **
+           ; Link Directive File is created by users when memory or segm
+           ent
+           ; location needs to be changed from the default as the follow
+           ing
+           ; cases, for instance:
+           ;    1. In case the stack area should be in fixed area
+           ;    2. In case the external memory should be used
+           ;
+           ; Please change the start address, the size of memory, 
+           ; and the name of memory or segment according to your system,
+           
+           ; and link this file with -D linker option if necessary.
+           ;
+           ;   MEMORY directive : Declares an address in installed memor
+           y.
+           ;                      Devides memory into two or more areas 
+           and
+           ;                      specifies a memory area
+           ;   MERGE directive  : Specifies location of a segment
+           ; ***********************************************************
+           **
+           
+           ; <Example on how to specify the stack area>
+           ;  Please specify the linker option -SSTK.
+           ;  The stack area should be in the internal RAM area.
+           ;
+           ;      START ADDRESS, STACK SIZE
+           ;memory STK : ( 0FB000H, 100H )
+           ; <Example of locating data in external memory>
+           ; The section name output by C compiler can be changed with
+           ; #pragma section function.
+           ;
+           ; If the name of ROMization-related section which has global
+           ; variables with initial values is changed, the modification 
+           of
+           ; C start-up routine will be required. 
+           ; Please refer the CC78K0R C Compiler Language User's Manual 
+           
+           ; Language Chap.11 in detail.
+           ;
+           ; ex. This is the example of renaming the @@DATAL segment.
+           ;   #pragma section @@DATAL EXTDATA
+           ;
+           ;   By the following directives, "EXTDATA" segment is located
+            in EXMEM area.
+           ;
+           ;        START ADDRESS, MEMORY SIZE
+
+
+*** Link information ***
+
+    33 output segment(s)
+  933H byte(s) real data
+   514 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=18000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_main     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_systeminit
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  Timer      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  Timer_User
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  Port       00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT r_main     00002H    00000H
+                  @@RLINIT r_systeminit
+                                      00002H    00000H
+                  @@RLINIT r_cg_cgc   00002H    00000H
+                  @@RLINIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@RLINIT Timer      00002H    00000H
+                  @@RLINIT Timer_User
+                                      00002H    00000H
+                  @@RLINIT Port       00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS r_main     00002H    00000H
+                  @@R_INIS r_systeminit
+                                      00002H    00000H
+                  @@R_INIS r_cg_cgc   00002H    00000H
+                  @@R_INIS r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIS Timer      00002H    00000H
+                  @@R_INIS Timer_User
+                                      00002H    00000H
+                  @@R_INIS Port       00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   r_main     00002H    00000H
+                  @@CALT   r_systeminit
+                                      00002H    00000H
+                  @@CALT   r_cg_cgc   00002H    00000H
+                  @@CALT   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CALT   Timer      00002H    00000H
+                  @@CALT   Timer_User
+                                      00002H    00000H
+                  @@CALT   Port       00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+         @@R_INIT                     00004H    00006H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00004H    00000H
+                  @@R_INIT r_main     00004H    00006H
+                  @@R_INIT r_systeminit
+                                      0000AH    00000H
+                  @@R_INIT r_cg_cgc   0000AH    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      0000AH    00000H
+                  @@R_INIT Timer      0000AH    00000H
+                  @@R_INIT Timer_User
+                                      0000AH    00000H
+                  @@R_INIT Port       0000AH    00000H
+                  @@R_INIT @rom       0000AH    00000H
+* gap *                               0000AH    00022H
+         @@VECT2C                     0002CH    00002H  CSEG AT
+                  @@VECT2C Timer_User
+                                      0002CH    00002H
+* gap *                               0002EH    00012H
+         @@VECT40                     00040H    00002H  CSEG AT
+                  @@VECT40 Timer_User
+                                      00040H    00002H
+* gap *                               00042H    0007EH
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   r_main     000C4H    00000H
+                  @@CODE   r_systeminit
+                                      000C4H    00000H
+                  @@CODE   r_cg_cgc   000C4H    00000H
+                  @@CODE   r_cg_cgc_user
+                                      000C4H    00000H
+                  @@CODE   Timer      000C4H    00000H
+                  @@CODE   Timer_User
+                                      000C4H    00000H
+                  @@CODE   Port       000C4H    00000H
+         ?CSEGSI                      000C4H    0000AH  CSEG
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    000ACH  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ACH
+         @@BASE                       00184H    00004H  CSEG BASE
+                  @@BASE   r_main     00184H    00000H
+                  @@BASE   r_systeminit
+                                      00184H    00000H
+                  @@BASE   r_cg_cgc   00184H    00000H
+                  @@BASE   r_cg_cgc_user
+                                      00184H    00000H
+                  @@BASE   Timer      00184H    00000H
+                  @@BASE   Timer_User
+                                      00184H    00004H
+                  @@BASE   Port       00188H    00000H
+         @@CODEL                      00188H    005A5H  CSEG
+                  @@CODEL  r_main     00188H    00458H
+                  @@CODEL  r_systeminit
+                                      005E0H    0002FH
+                  @@CODEL  r_cg_cgc   0060FH    00017H
+                  @@CODEL  r_cg_cgc_user
+                                      00626H    00005H
+                  @@CODEL  Timer      0062BH    000BAH
+                  @@CODEL  Timer_User
+                                      006E5H    00000H
+                  @@CODEL  Port       006E5H    00048H
+         @@LCODEL                     0072DH    0001CH  CSEG
+                  @@LCODEL exit       0072DH    0001CH
+* gap *                               00749H    028B7H
+         @@CNST                       03000H    0009CH  CSEG MIRRORP
+                  @@CNST   @cstart    03000H    00000H
+                  @@CNST   r_main     03000H    0009CH
+                  @@CNST   r_systeminit
+                                      0309CH    00000H
+                  @@CNST   r_cg_cgc   0309CH    00000H
+                  @@CNST   r_cg_cgc_user
+                                      0309CH    00000H
+                  @@CNST   Timer      0309CH    00000H
+                  @@CNST   Timer_User
+                                      0309CH    00000H
+                  @@CNST   Port       0309CH    00000H
+* gap *                               0309CH    14D64H
+         ??OCDROM                     17E00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FCF00H   SIZE=03100H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FCF00H    000BAH  DSEG BASEP
+                  @@DATA   @cstart    FCF00H    000BAH
+                  @@DATA   r_main     FCFBAH    00000H
+                  @@DATA   r_systeminit
+                                      FCFBAH    00000H
+                  @@DATA   r_cg_cgc   FCFBAH    00000H
+                  @@DATA   r_cg_cgc_user
+                                      FCFBAH    00000H
+                  @@DATA   Timer      FCFBAH    00000H
+                  @@DATA   Timer_User
+                                      FCFBAH    00000H
+                  @@DATA   Port       FCFBAH    00000H
+                  @@DATA   @rom       FCFBAH    00000H
+         @@INIT                       FCFBAH    00006H  DSEG BASEP
+                  @@INIT   @cstart    FCFBAH    00000H
+                  @@INIT   r_main     FCFBAH    00006H
+                  @@INIT   r_systeminit
+                                      FCFC0H    00000H
+                  @@INIT   r_cg_cgc   FCFC0H    00000H
+                  @@INIT   r_cg_cgc_user
+                                      FCFC0H    00000H
+                  @@INIT   Timer      FCFC0H    00000H
+                  @@INIT   Timer_User
+                                      FCFC0H    00000H
+                  @@INIT   Port       FCFC0H    00000H
+                  @@INIT   @rom       FCFC0H    00000H
+         @@INIS                       FCFC0H    00000H  DSEG UNITP
+                  @@INIS   @cstart    FCFC0H    00000H
+                  @@INIS   r_main     FCFC0H    00000H
+                  @@INIS   r_systeminit
+                                      FCFC0H    00000H
+                  @@INIS   r_cg_cgc   FCFC0H    00000H
+                  @@INIS   r_cg_cgc_user
+                                      FCFC0H    00000H
+                  @@INIS   Timer      FCFC0H    00000H
+                  @@INIS   Timer_User
+                                      FCFC0H    00000H
+                  @@INIS   Port       FCFC0H    00000H
+                  @@INIS   @rom       FCFC0H    00000H
+         @@DATS                       FCFC0H    00000H  DSEG UNITP
+                  @@DATS   @cstart    FCFC0H    00000H
+                  @@DATS   r_main     FCFC0H    00000H
+                  @@DATS   r_systeminit
+                                      FCFC0H    00000H
+                  @@DATS   r_cg_cgc   FCFC0H    00000H
+                  @@DATS   r_cg_cgc_user
+                                      FCFC0H    00000H
+                  @@DATS   Timer      FCFC0H    00000H
+                  @@DATS   Timer_User
+                                      FCFC0H    00000H
+                  @@DATS   Port       FCFC0H    00000H
+                  @@DATS   @rom       FCFC0H    00000H
+         @@INITL                      FCFC0H    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FCFC0H    00000H
+                  @@INITL  r_main     FCFC0H    00000H
+                  @@INITL  r_systeminit
+                                      FCFC0H    00000H
+                  @@INITL  r_cg_cgc   FCFC0H    00000H
+                  @@INITL  r_cg_cgc_user
+                                      FCFC0H    00000H
+                  @@INITL  Timer      FCFC0H    00000H
+                  @@INITL  Timer_User
+                                      FCFC0H    00000H
+                  @@INITL  Port       FCFC0H    00000H
+                  @@INITL  @rom       FCFC0H    00000H
+         @@DATAL                      FCFC0H    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FCFC0H    00000H
+                  @@DATAL  r_main     FCFC0H    00000H
+                  @@DATAL  r_systeminit
+                                      FCFC0H    00000H
+                  @@DATAL  r_cg_cgc   FCFC0H    00000H
+                  @@DATAL  r_cg_cgc_user
+                                      FCFC0H    00000H
+                  @@DATAL  Timer      FCFC0H    00000H
+                  @@DATAL  Timer_User
+                                      FCFC0H    00000H
+                  @@DATAL  Port       FCFC0H    00000H
+                  @@DATAL  @rom       FCFC0H    00000H
+         @@BITS                       FCFC0H    00000H  BSEG
+                  @@BITS   @cstart    FCFC0H.0  00000H.0
+                  @@BITS   r_main     FCFC0H.0  00000H.0
+                  @@BITS   r_systeminit
+                                      FCFC0H.0  00000H.0
+                  @@BITS   r_cg_cgc   FCFC0H.0  00000H.0
+                  @@BITS   r_cg_cgc_user
+                                      FCFC0H.0  00000H.0
+                  @@BITS   Timer      FCFC0H.0  00000H.0
+                  @@BITS   Timer_User
+                                      FCFC0H.0  00000H.0
+                  @@BITS   Port       FCFC0H.0  00000H.0
+* gap *                               FCFC0H    02F40H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F104FF
+ Device file : V2.00
+

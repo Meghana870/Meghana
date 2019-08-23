@@ -1,0 +1,273 @@
+#05
+;FF     PUBLIC
+02FFED8@@CPR1
+02FFEDE@@FPRF1
+02FFEDF@@FPRF2
+02FFEDE@@FPRFP
+02FFED8@@FPRS
+02FFEDC@@FPRXD
+02FFEDC@@FPRXP
+02FFEDD@@FPRXS
+01001A5@@cudiv
+0100269@@fadd
+0100278@@fadde
+0100279@@faddx
+01005C3@@fdiv
+01005D3@@fdivx
+010044F@@finfws
+0101D93@@fldd2
+0101D86@@flds1
+0101D9E@@flds2
+0101D49@@fldsd
+0101D5F@@fldsk_f
+0101D74@@fldsk_n
+0101C61@@flogx
+0100220@@fmthrr
+0100472@@fmul
+0100482@@fmulx
+01003A3@@fnor
+0101D0D@@fply
+0100419@@fret
+0100437@@fret0
+010043A@@fret0s
+0100443@@fret0x
+0101C01@@frnd
+0101DBD@@fst1d
+01003DB@@fstore
+0101D54@@fstrcp
+0101D07@@fsubx
+01003CE@@funite
+0100447@@fx0div
+0101DAB@@fxcd1
+0100433@@fxinex
+0100467@@fxnan1
+0100462@@fxnan2
+010044B@@fxover
+01001E2@@lsadd
+010020C@@lsbor
+01001F1@@lslsh
+0100184@@lsmul
+01006F2@@lstof
+01001E2@@luadd
+010020C@@lubor
+01001BB@@ludiv
+01001F1@@lulsh
+0100184@@lumul
+0100708@@lutof
+0100711@@lutofe
+02FD418_?DATA
+02FD436_?DATAL
+02FD436_?DATS
+02FD436_?INIS
+02FD436_?INIT
+02FD436_?INITL
+0100002_?RLINIT
+0100002_?R_INIS
+0100060_?R_INIT
+02FCF98_@BRKADR
+02FCF86_@DIVR
+02FCF80_@FNCENT
+02FCF00_@FNCTBL
+02FCF8A_@LDIVR
+0000000_@MAA
+02FCFBA_@MEMBTM
+02FCF9A_@MEMTOP
+02FFED8_@RTARG0
+02FFED9_@RTARG1
+02FFEDA_@RTARG2
+02FFEDB_@RTARG3
+02FFEDC_@RTARG4
+02FFEDD_@RTARG5
+02FFEDE_@RTARG6
+02FFEDF_@RTARG7
+02FCF82_@SEED
+02FFED4_@SEGAX
+02FFED5_@SEGBC
+02FFED6_@SEGDE
+02FFED7_@SEGHL
+00FFED4_@STBEG
+00FD436_@STEND
+02FCF92_@TOKPTR
+0100184_@cend
+01000D8_@cstart
+0100026_@vect26
+010002C_@vect2c
+0100040_@vect40
+0100DAF_Clear_lcd
+02FD40C_DR
+0100DEB_Delay
+0100DD1_Display_Delay
+02FD414_FEC
+0101456_GetTunerData
+010144D_GetTunerState
+0100DC0_Goto_lcd
+0101409_I2C_Read_Demod
+010143D_I2C_Read_Tuner
+01013EA_I2C_Write_Demod
+0101423_I2C_Write_Tuner
+0100CC9_Init_lcd
+01016A6_PLL_init
+02FD433_Patch_version
+0100EDD_R_CGC_Create
+0100EF4_R_CGC_Get_ResetSource
+010105D_R_EEPROM_wait_write
+0101396_R_IICr_Init
+0101378_R_IICr_SCL_Time
+010128B_R_IICr_StopCond
+0100F3D_R_PORT_7_ScanLine_Input
+0100F37_R_PORT_7_ScanLine_Output
+0100EF9_R_PORT_Create
+0100F11_R_PORT_ScanData_High
+0100F0D_R_PORT_ScanData_Low
+0100F15_R_PORT_ScanLine_Input
+0100F24_R_PORT_ScanLine_Output
+0100F2B_R_PORT_ScanLine_SetScan
+0100EAE_R_Systeminit
+0100F96_R_TAU0_Channel0_Start
+0100FA7_R_TAU0_Channel0_Stop
+0100F41_R_TAU0_Create
+0100FB8_R_TMR_RJ0_Create
+0100FDD_R_TMR_RJ0_Start
+0100FEC_R_TMR_RJ0_Stop
+0100CAF_R_Wait
+02FD434_ReceiveData
+0101490_Si2165_Device_init
+010145F_Si2165_Driver
+0101463_Si2165_Probe
+010169B_Write_Delay
+0100D6A_Write_char_lcd
+0100D43_Write_com_lcd
+0100D1C_Write_com_lcd1
+0100D98_Write_string_lcd
+02FD3F4_adc_clk
+0101484_dvb_frontend_ops
+02FD404_dvb_rate
+0100E77_enable_e
+02FCF96_errno
+0101BD4_exit
+02FD3EC_fvco_hz
+02FCFBA_gDemodState
+02FCFBC_g_PARAI
+02FD3EA_g_comstatus
+02FD1C4_g_data_bufferR1
+02FCFC4_g_data_bufferW1
+02FD0C4_g_data_bufferW2
+0100ED2_hdwinit
+02FD419_keyevent
+0101BF0_log
+0101BF0_logf
+02FD410_m
+0100982_main
+010024A_matherr
+02FD3FC_oversamp
+02FD3CB_pll_divM
+02FD3CA_pll_divN
+02FD3C9_pll_divP
+02FD3C8_pll_divR
+02FD41A_pressTypeRow
+02FD418_pressed_key
+02FD3C4_ref_freq_hz
+02FD400_reg_value
+02FD41B_scanInput
+0101B9E_si2165_adjust_pll_divl
+01019EC_si2165_read_status
+01017AD_si2165_set_frontend
+0101860_si2165_set_frontend_dvbc
+0101828_si2165_set_if_freq_shift
+0101B58_si2165_set_oversamp
+0101682_si2165_sleep
+02FD408_symbol_rate
+02FD3F0_sys_clk
+02FD41C_temp
+02FD41D_tuner_data1
+02FD422_tuner_data2
+02FD427_tuner_data3
+02FD42C_tuner_data4
+02FD431_tunerstatus
+02FD3F8_var
+;FF     @cstart
+;FF     r_main
+<0103000L0019
+010300FL0022
+010301EL0025
+010302DL0028
+010303CL0031
+0103044L0034
+010304EL0037
+0103054L0040
+0103059L0043
+010305FL0046
+0103067L0049
+010306BL0052
+0103072L0055
+0103079L0058
+0103082L0061
+010308CL0064
+;FF     r_systeminit
+;FF     r_cg_cgc
+;FF     r_cg_cgc_user
+;FF     Port
+;FF     Timer
+;FF     Timer_User
+<0100767_r_tau0_channel0_interrupt
+0100769_r_tmr_rj0_interrupt
+;FF     Serial_User
+<02FD3E4_EEPROM_Info
+010076B_IINTIICr_New
+0100755_IINTTM02
+01011CD_R_EEPROM_Devide
+01010F8_R_EEPROM_next_page
+010136E_R_IICr_NACK
+0101029_R_IICr_RxData
+010100D_R_IICr_RxData_ST
+010103E_R_IICr_Rx_LastData
+0101009_R_IICr_Rx_RST
+0101356_R_IICr_SCL_high
+0101387_R_IICr_SCL_highTime
+0101362_R_IICr_SCL_low
+010134E_R_IICr_SCL_pulse
+010122A_R_IICr_StartCond
+01010BA_R_IICr_TxData
+01010AC_R_IICr_TxDataST
+0100FFB_R_IICr_Tx_addr1
+0101002_R_IICr_Tx_addr2
+01012B8_R_IICr_send_Stop
+01012F6_R_IICr_wait_bus
+0101110_check_EEPROM_Addr
+02FD3DF_gContext
+02FD3DE_gDemodData
+02FD3DC_gDemodRegAddr
+02FD3E3_gRTunerData
+02FD3E0_gTunerData
+02FD3E2_gTunerState
+02FD432_gTunerTXData
+02FD3CC_g_PARAA
+02FD3D4_g_PARAC
+02FD3EB_g_eeprom_type
+010118D_get_slave_Addr
+;FF     @lmul
+;FF     @cudiv
+;FF     @ludiv
+;FF     @ladd
+;FF     @llsh
+;FF     @lbor
+;FF     @SEGREG
+;FF     @RTARG0
+;FF     exit
+;FF     m_log
+;FF     m_fcom4
+;FF     m_fcom5
+;FF     m_fcom6
+;FF     m_flogx
+;FF     m_fadd
+;FF     m_fcom1
+;FF     m_fmul
+;FF     m_fsubx
+;FF     m_fdiv
+;FF     m_lstof
+;FF     m_lutof
+;FF     m_fcom2
+;FF     m_fcom3
+;FF     @rom
+=
+
