@@ -76,6 +76,30 @@
       <ParentItem>49fc3c75-f2fa-4e7e-a5d7-100cad6e9f1f</ParentItem>
       <Property>cfb1f8c3-f6ca-4464-b431-dc98e0c974ad</Property>
     </Instance>
+    <Instance Guid="e445c156-c650-482c-a803-342f69e11415">
+      <Name>Si2165.h</Name>
+      <Type>File</Type>
+      <RelativePath>Si2165.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>49fc3c75-f2fa-4e7e-a5d7-100cad6e9f1f</ParentItem>
+      <Property>305a222c-a4d6-4d4e-a9be-6bc18431c650</Property>
+    </Instance>
+    <Instance Guid="79cf4544-ec00-4435-a392-8b037f5cfe06">
+      <Name>Si2165_Priv.h</Name>
+      <Type>File</Type>
+      <RelativePath>Si2165_Priv.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>49fc3c75-f2fa-4e7e-a5d7-100cad6e9f1f</ParentItem>
+      <Property>7b265695-86d9-419e-9465-33ab2ff6ebeb</Property>
+    </Instance>
+    <Instance Guid="652d3c58-120e-4e26-8c3b-569ab65615d4">
+      <Name>Serial_User.c</Name>
+      <Type>File</Type>
+      <RelativePath>Serial_User.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>49fc3c75-f2fa-4e7e-a5d7-100cad6e9f1f</ParentItem>
+      <Property>513c99c5-c689-44cc-89b6-9fe2a033a17d</Property>
+    </Instance>
     <Instance Guid="8ab3aecf-ddb9-48ba-a4bf-c760bab6bd90">
       <Name>r_main.c</Name>
       <Type>File</Type>
@@ -119,6 +143,7 @@
       <RelativePath>r_cg_userdefine.h</RelativePath>
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>ec03ad56-2eb8-48ad-b3d8-bd53f96d7a46</ParentItem>
+      <Property>8f033b43-e397-4f4e-9e69-195813d1b541</Property>
     </Instance>
     <Instance Guid="37b87731-4e0b-4fef-9609-1be29398ce49">
       <Name>r_cg_cgc.h</Name>
@@ -134,9 +159,6 @@
     </Instance>
   </Class>
   <Class Guid="0d548289-d5e9-4893-9a8f-9374b13f19a9">
-    <Instance Guid="e349dc44-7ffc-4a87-b1e7-b85ec5317a22">
-      <MemoCount>0</MemoCount>
-    </Instance>
     <Instance Guid="03b3d699-47e7-4dcf-a367-f561d4081e70">
       <MemoCount>0</MemoCount>
     </Instance>
@@ -155,12 +177,27 @@
     <Instance Guid="cfb1f8c3-f6ca-4464-b431-dc98e0c974ad">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="e349dc44-7ffc-4a87-b1e7-b85ec5317a22">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="b79d0769-70b2-4cf0-a536-5be3545c4260">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="8f033b43-e397-4f4e-9e69-195813d1b541">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="7b265695-86d9-419e-9465-33ab2ff6ebeb">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="305a222c-a4d6-4d4e-a9be-6bc18431c650">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="513c99c5-c689-44cc-89b6-9fe2a033a17d">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
   <Class Guid="78a5c5cd-76cb-4bcc-a031-3020011fbc9a">
-    <Instance Guid="0320a631-401f-4e3b-b10b-d974dbb735ed">
+    <Instance Guid="6c535082-e6f0-4e1f-a142-cd9c4dbb999d">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -195,23 +232,25 @@
       <BuildMode0>RABlAGYAYQB1AGwAdABCAHUAaQBsAGQA</BuildMode0>
       <BatchBuildFlag0>False</BatchBuildFlag0>
       <CurrentBuildMode>DefaultBuild</CurrentBuildMode>
-      <SourceItemGuid0>8ab3aecf-ddb9-48ba-a4bf-c760bab6bd90</SourceItemGuid0>
-      <SourceItemType0>CSource</SourceItemType0>
-      <SourceItemGuid1>21bbf5f0-3f51-4802-8581-a684d17ee052</SourceItemGuid1>
+      <SourceItemGuid0>244a75e9-31f0-46a2-8815-fbd5e3c59ef9</SourceItemGuid0>
+      <SourceItemType0>LinkDirectiveSource</SourceItemType0>
+      <SourceItemGuid1>a49c3ac7-5598-4d09-a193-84b1f2af05cb</SourceItemGuid1>
       <SourceItemType1>CSource</SourceItemType1>
-      <SourceItemGuid2>82d2093c-c6b4-45b7-a596-1348d425a473</SourceItemGuid2>
+      <SourceItemGuid2>f9ce9256-727e-420f-b0a7-20de9cb50a92</SourceItemGuid2>
       <SourceItemType2>CSource</SourceItemType2>
-      <SourceItemGuid3>dba3b626-6f71-42da-9dc3-0441323cbada</SourceItemGuid3>
+      <SourceItemGuid3>e2f8aff2-3f79-46c7-8e36-0dde83f931e3</SourceItemGuid3>
       <SourceItemType3>CSource</SourceItemType3>
-      <SourceItemGuid4>a49c3ac7-5598-4d09-a193-84b1f2af05cb</SourceItemGuid4>
+      <SourceItemGuid4>8ab3aecf-ddb9-48ba-a4bf-c760bab6bd90</SourceItemGuid4>
       <SourceItemType4>CSource</SourceItemType4>
-      <SourceItemGuid5>244a75e9-31f0-46a2-8815-fbd5e3c59ef9</SourceItemGuid5>
-      <SourceItemType5>LinkDirectiveSource</SourceItemType5>
-      <SourceItemGuid6>f9ce9256-727e-420f-b0a7-20de9cb50a92</SourceItemGuid6>
+      <SourceItemGuid5>21bbf5f0-3f51-4802-8581-a684d17ee052</SourceItemGuid5>
+      <SourceItemType5>CSource</SourceItemType5>
+      <SourceItemGuid6>82d2093c-c6b4-45b7-a596-1348d425a473</SourceItemGuid6>
       <SourceItemType6>CSource</SourceItemType6>
-      <SourceItemGuid7>e2f8aff2-3f79-46c7-8e36-0dde83f931e3</SourceItemGuid7>
+      <SourceItemGuid7>dba3b626-6f71-42da-9dc3-0441323cbada</SourceItemGuid7>
       <SourceItemType7>CSource</SourceItemType7>
-      <SourceItemCount>8</SourceItemCount>
+      <SourceItemGuid8>652d3c58-120e-4e26-8c3b-569ab65615d4</SourceItemGuid8>
+      <SourceItemType8>CSource</SourceItemType8>
+      <SourceItemCount>9</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
     </Instance>
     <Instance Guid="e6d45d58-de50-4ae7-8d7f-320171fa9617">
@@ -478,7 +517,7 @@ cl78mf
       <AllocationControlOfSelfRandomAccessMemory-DefaultValue>No</AllocationControlOfSelfRandomAccessMemory-DefaultValue>
       <AllocationControlOfTraceRandomAccessMemory-DefaultValue>No</AllocationControlOfTraceRandomAccessMemory-DefaultValue>
       <AllocationControlOfHotPluginRandomAccessMemory-DefaultValue>No</AllocationControlOfHotPluginRandomAccessMemory-DefaultValue>
-      <TimeTagModified--0>-8586351348928109937</TimeTagModified--0>
+      <TimeTagModified--0>-8586350697693903144</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
@@ -597,7 +636,7 @@ cl78mf
       <OtherAdditionalOptions-DefaultValue />
       <NumberOfCharactersPerLine-DefaultValue>132</NumberOfCharactersPerLine-DefaultValue>
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
-      <TimeTagModified--0>-8586351349011427413</TimeTagModified--0>
+      <TimeTagModified--0>-8586350697693903144</TimeTagModified--0>
       <ListFile-0>False</ListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLibraryCommands-0 />
@@ -615,7 +654,7 @@ cl78mf
       <VariableInformationFile-DefaultValue>False</VariableInformationFile-DefaultValue>
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
-      <TimeTagModified--0>-8586351348928109937</TimeTagModified--0>
+      <TimeTagModified--0>-8586350697693903144</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
@@ -678,32 +717,47 @@ cl78mf
       <ItemAddTime>637020890045905392</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
-    <Instance Guid="fc999d8f-43d6-4cb3-af4b-cf6891d759fb">
-      <TimeTagModified-SourceItem0--0>-8586351349120076961</TimeTagModified-SourceItem0--0>
-      <SourceItem0-BuildingTarget-0>True</SourceItem0-BuildingTarget-0>
-      <SourceItem0-IndividualCompileOption-0>False</SourceItem0-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem1--0>-8586351349119727846</TimeTagModified-SourceItem1--0>
-      <SourceItem1-BuildingTarget-0>True</SourceItem1-BuildingTarget-0>
-      <SourceItem1-IndividualCompileOption-0>False</SourceItem1-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem2--0>-8586351349119438981</TimeTagModified-SourceItem2--0>
-      <SourceItem2-BuildingTarget-0>True</SourceItem2-BuildingTarget-0>
-      <SourceItem2-IndividualCompileOption-0>False</SourceItem2-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem3--0>-8586351349119139199</TimeTagModified-SourceItem3--0>
-      <SourceItem3-BuildingTarget-0>True</SourceItem3-BuildingTarget-0>
-      <SourceItem3-IndividualCompileOption-0>False</SourceItem3-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem4--0>-8586351346175148420</TimeTagModified-SourceItem4--0>
-      <SourceItem4-BuildingTarget-0>True</SourceItem4-BuildingTarget-0>
-      <SourceItem4-IndividualCompileOption-0>False</SourceItem4-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem6--0>-8586351345373411482</TimeTagModified-SourceItem6--0>
-      <SourceItem6-BuildingTarget-0>True</SourceItem6-BuildingTarget-0>
-      <SourceItem6-IndividualCompileOption-0>False</SourceItem6-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem7--0>-8586351344808362114</TimeTagModified-SourceItem7--0>
-      <SourceItem7-BuildingTarget-0>True</SourceItem7-BuildingTarget-0>
-      <SourceItem7-IndividualCompileOption-0>False</SourceItem7-IndividualCompileOption-0>
+    <Instance Guid="79cf4544-ec00-4435-a392-8b037f5cfe06">
+      <ItemAddTime>637021537957896470</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="e445c156-c650-482c-a803-342f69e11415">
+      <ItemAddTime>637021537622243442</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="652d3c58-120e-4e26-8c3b-569ab65615d4">
+      <ItemAddTime>637021538321954526</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
     <Instance Guid="2317529b-91c1-49b6-8351-6d8f51718b0d">
-      <TimeTagModified-SourceItem5--0>-8586351349117554035</TimeTagModified-SourceItem5--0>
+      <TimeTagModified-SourceItem0--0>-8586351349117554035</TimeTagModified-SourceItem0--0>
+      <SourceItem0-BuildingTarget-0>True</SourceItem0-BuildingTarget-0>
+    </Instance>
+    <Instance Guid="fc999d8f-43d6-4cb3-af4b-cf6891d759fb">
+      <TimeTagModified-SourceItem1--0>-8586351346175148420</TimeTagModified-SourceItem1--0>
+      <SourceItem1-BuildingTarget-0>True</SourceItem1-BuildingTarget-0>
+      <SourceItem1-IndividualCompileOption-0>False</SourceItem1-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem2--0>-8586351345373411482</TimeTagModified-SourceItem2--0>
+      <SourceItem2-BuildingTarget-0>True</SourceItem2-BuildingTarget-0>
+      <SourceItem2-IndividualCompileOption-0>False</SourceItem2-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem3--0>-8586351344808362114</TimeTagModified-SourceItem3--0>
+      <SourceItem3-BuildingTarget-0>True</SourceItem3-BuildingTarget-0>
+      <SourceItem3-IndividualCompileOption-0>False</SourceItem3-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem4--0>-8586351349120076961</TimeTagModified-SourceItem4--0>
+      <SourceItem4-BuildingTarget-0>True</SourceItem4-BuildingTarget-0>
+      <SourceItem4-IndividualCompileOption-0>False</SourceItem4-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem5--0>-8586351349119727846</TimeTagModified-SourceItem5--0>
       <SourceItem5-BuildingTarget-0>True</SourceItem5-BuildingTarget-0>
+      <SourceItem5-IndividualCompileOption-0>False</SourceItem5-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem6--0>-8586351349119438981</TimeTagModified-SourceItem6--0>
+      <SourceItem6-BuildingTarget-0>True</SourceItem6-BuildingTarget-0>
+      <SourceItem6-IndividualCompileOption-0>False</SourceItem6-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem7--0>-8586351349119139199</TimeTagModified-SourceItem7--0>
+      <SourceItem7-BuildingTarget-0>True</SourceItem7-BuildingTarget-0>
+      <SourceItem7-IndividualCompileOption-0>False</SourceItem7-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem8--0>-8586350696532582235</TimeTagModified-SourceItem8--0>
+      <SourceItem8-BuildingTarget-0>True</SourceItem8-BuildingTarget-0>
+      <SourceItem8-IndividualCompileOption-0>False</SourceItem8-IndividualCompileOption-0>
     </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
@@ -3288,6 +3342,31 @@ cl78mf
       &lt;GlobleUserTag&gt;
         &lt;cg_security4 Name="cg_security4" Value="00" /&gt;
         &lt;cg_security7 Name="cg_security7" Value="00" /&gt;
+        &lt;cg_crc_area Name="cg_crc_area" Value="00" /&gt;
+        &lt;wdt_option Name="wdt_option" Value="EF" /&gt;
+        &lt;cg_security6 Name="cg_security6" Value="00" /&gt;
+        &lt;pior_value Name="pior_value" Value="00" /&gt;
+        &lt;lvi_option Name="lvi_option" Value="FF" /&gt;
+        &lt;clock_option Name="clock_option" Value="F8" /&gt;
+        &lt;cg_security0 Name="cg_security0" Value="00" /&gt;
+        &lt;pior1_value Name="pior1_value" Value="00" /&gt;
+        &lt;cg_security3 Name="cg_security3" Value="00" /&gt;
+        &lt;cg_security9 Name="cg_security9" Value="00" /&gt;
+        &lt;cg_security1 Name="cg_security1" Value="00" /&gt;
+        &lt;cg_security2 Name="cg_security2" Value="00" /&gt;
+        &lt;cg_onchip Name="cg_onchip" Value="" /&gt;
+        &lt;cg_option Name="cg_option" Value="84" /&gt;
+        &lt;cg_pms_value Name="cg_pms_value" Value="00" /&gt;
+        &lt;cg_iawctl_value Name="cg_iawctl_value" Value="00" /&gt;
+        &lt;cg_security5 Name="cg_security5" Value="00" /&gt;
+        &lt;cg_security8 Name="cg_security8" Value="00" /&gt;
+        &lt;ocdstart Name="ocdstart" Value="17E00" /&gt;
+      &lt;/GlobleUserTag&gt;
+    &lt;/TAG&gt;
+    &lt;TAG&gt;
+      &lt;GlobleUserTag&gt;
+        &lt;cg_security4 Name="cg_security4" Value="00" /&gt;
+        &lt;cg_security7 Name="cg_security7" Value="00" /&gt;
         &lt;pior1_value Name="pior1_value" Value="00" /&gt;
         &lt;cg_iawctl_value Name="cg_iawctl_value" Value="00" /&gt;
         &lt;cg_security6 Name="cg_security6" Value="00" /&gt;
@@ -3467,6 +3546,71 @@ cl78mf
       &lt;setting name="Interrupt_only_priority" value="3" /&gt;
     &lt;/LVD&gt;
   &lt;/SETTING&gt;
+  &lt;SETTING&gt;
+    &lt;CGC&gt;
+      &lt;setting name="PIOR_Setting" value="FIX" /&gt;
+      &lt;setting name="PIOR5" value="1" /&gt;
+      &lt;setting name="PIOR4" value="1" /&gt;
+      &lt;setting name="PIOR3" value="1" /&gt;
+      &lt;setting name="PIOR2" value="1" /&gt;
+      &lt;setting name="PIOR1" value="1" /&gt;
+      &lt;setting name="PIOR0" value="1" /&gt;
+      &lt;setting name="PIOR10" value="1" /&gt;
+      &lt;setting name="PIOR11" value="1" /&gt;
+      &lt;setting name="PIOR12" value="1" /&gt;
+      &lt;setting name="PIOR13" value="1" /&gt;
+      &lt;setting name="VDD" value="VDD0" /&gt;
+      &lt;setting name="EVDD" value="EVDD1" /&gt;
+      &lt;setting name="Main_system_clock" value="high-speed internal clock" /&gt;
+      &lt;setting name="High_speed_internal_oscillator" value="operation" /&gt;
+      &lt;setting name="High_speed_internal_frequency" value="8" /&gt;
+      &lt;setting name="High_speed_system_clock" value="stop" /&gt;
+      &lt;setting name="High_speed_system_input" value="X1" /&gt;
+      &lt;setting name="HighSpeedSystemStable" value="7" /&gt;
+      &lt;setting name="High_speed_system_clock_frequency" value="5" /&gt;
+      &lt;setting name="Sub_clock_operation" value="XT1" /&gt;
+      &lt;setting name="SubclockFrequency" value="32.768" /&gt;
+      &lt;setting name="XT1_oscillator_oscillation_mode" value="0" /&gt;
+      &lt;setting name="SubClock" value="unused" /&gt;
+      &lt;setting name="Subclock_in_halt" value="0" /&gt;
+      &lt;setting name="CPU_clock" value="0" /&gt;
+      &lt;setting name="Internal_low-speed_clock" value="15" /&gt;
+      &lt;setting name="RTC_clcok_selection" value="0" /&gt;
+      &lt;setting name="On_chip_debug" value="used" /&gt;
+      &lt;setting name="RRM" value="used" /&gt;
+      &lt;setting name="Erase_flash_memory" value="yes" /&gt;
+      &lt;setting name="Security_ID_setting" value="used" /&gt;
+      &lt;setting name="Security_ID" value="0x00000000000000000000" /&gt;
+      &lt;setting name="CG_ReadResetSource" value="generated" /&gt;
+      &lt;setting name="CRCoperation" value="unused" /&gt;
+      &lt;setting name="CRCArea" value="0" /&gt;
+      &lt;setting name="Accessoperation" value="unused" /&gt;
+      &lt;setting name="RAMoperation" value="unused" /&gt;
+      &lt;setting name="RAMArea" value="0" /&gt;
+      &lt;setting name="PORToperation" value="unused" /&gt;
+      &lt;setting name="INToperation" value="unused" /&gt;
+      &lt;setting name="CHIPoperation" value="unused" /&gt;
+      &lt;setting name="PMS" value="Pmn value" /&gt;
+    &lt;/CGC&gt;
+    &lt;WDT&gt;
+      &lt;setting name="Operation" value="unused" /&gt;
+      &lt;setting name="Overflow_time" value="7" /&gt;
+      &lt;setting name="Window_opening_time" value="2" /&gt;
+      &lt;setting name="Standby_operation" value="enable" /&gt;
+      &lt;setting name="Interval_interrupt" value="use" /&gt;
+      &lt;setting name="Interval_interrupt_priority" value="3" /&gt;
+    &lt;/WDT&gt;
+    &lt;LVD&gt;
+      &lt;setting name="Operation" value="unused" /&gt;
+      &lt;setting name="Reset_only_level" value="0" /&gt;
+      &lt;setting name="InterruptReset_level" value="0" /&gt;
+      &lt;setting name="Interrupt_level" value="0" /&gt;
+      &lt;setting name="Interrupt_only_level" value="0" /&gt;
+      &lt;setting name="operation_mode" value="reset" /&gt;
+      &lt;setting name="Interrupt_priority" value="3" /&gt;
+      &lt;setting name="Interrupt_only_priority" value="3" /&gt;
+    &lt;/LVD&gt;
+  &lt;/SETTING&gt;
 &lt;/RL78G14&gt;</CodeGenerator>
       <FormatVersion>1.0</FormatVersion>
       <ToolGUID>3bb7e60c-53b6-4d74-9d59-a78af9bf763c</ToolGUID>
@@ -3481,6 +3625,11 @@ cl78mf
   <Class Guid="ac2a8323-4fa1-42e5-af5d-5845b66c9c38">
     <Instance Guid="ac2a8323-4fa1-42e5-af5d-5845b66c9c38">
       <ProjectKind>Project78K0R</ProjectKind>
+    </Instance>
+  </Class>
+  <Class Guid="2a2c2a43-ecdb-4e88-80bd-e75f3e33db90">
+    <Instance Guid="2a2c2a43-ecdb-4e88-80bd-e75f3e33db90">
+      <ProductVersion>3.02.00.00</ProductVersion>
     </Instance>
   </Class>
 </CubeSuiteProject>

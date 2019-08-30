@@ -1,7 +1,7 @@
 
 
 
-78K0R Linker V1.60                            Date:23 Aug 2019 Page:   1
+78K0R Linker V1.60                            Date:30 Aug 2019 Page:   1
 
 Command:   -yC:\Program Files (x86)\Renesas Electronics\CubeSuite+\Devic
            e\RL78\Devicefile -_msgoff -dr_lk.dr -oDefaultBuild\Keypad_LC
@@ -127,8 +127,8 @@ Directive: ;/***********************************************************
 *** Link information ***
 
     39 output segment(s)
- 1FE2H byte(s) real data
-  1216 symbol(s) defined
+ 2EDBH byte(s) real data
+  1528 symbol(s) defined
 
 
 *** Memory map ***
@@ -223,26 +223,11 @@ Directive: ;/***********************************************************
          @@VECT40                     00040H    00002H  CSEG AT
                   @@VECT40 Timer_User
                                       00040H    00002H
-         @@R_INIT                     00042H    0001EH  CSEG UNIT64KP
-                  @@R_INIT @cstart    00042H    00000H
-                  @@R_INIT r_main     00042H    0001AH
-                  @@R_INIT r_systeminit
-                                      0005CH    00000H
-                  @@R_INIT r_cg_cgc   0005CH    00000H
-                  @@R_INIT r_cg_cgc_user
-                                      0005CH    00000H
-                  @@R_INIT Port       0005CH    00000H
-                  @@R_INIT Timer      0005CH    00000H
-                  @@R_INIT Timer_User
-                                      0005CH    00000H
-                  @@R_INIT Serial_User
-                                      0005CH    00004H
-                  @@R_INIT @rom       00060H    00000H
-* gap *                               00060H    00060H
+* gap *                               00042H    0007EH
          ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
          ?CSEGSI                      000C4H    0000AH  CSEG
          ?OCDSTAD                     000CEH    0000AH  CSEG
-         @@LCODE                      000D8H    0067DH  CSEG BASE
+         @@LCODE                      000D8H    00720H  CSEG BASE
                   @@LCODE  @cstart    000D8H    000ACH
                   @@LCODE  @lmul      00184H    00021H
                   @@LCODE  @cudiv     001A5H    00016H
@@ -250,190 +235,208 @@ Directive: ;/***********************************************************
                   @@LCODE  @ladd      001E2H    0000FH
                   @@LCODE  @llsh      001F1H    0001BH
                   @@LCODE  @lbor      0020CH    00014H
-                  @@LCODE  m_fcom5    00220H    0002AH
-                  @@LCODE  m_fcom6    0024AH    0001FH
-                  @@LCODE  m_fadd     00269H    0013AH
-                  @@LCODE  m_fcom1    003A3H    000CFH
-                  @@LCODE  m_fmul     00472H    00151H
-                  @@LCODE  m_fdiv     005C3H    0012FH
-                  @@LCODE  m_lstof    006F2H    00016H
-                  @@LCODE  m_lutof    00708H    0004DH
-         @@CODE                       00755H    00012H  CSEG BASE
-                  @@CODE   r_main     00755H    00000H
+                  @@LCODE  m_fadd     00220H    0013AH
+                  @@LCODE  m_fcom1    0035AH    000CFH
+                  @@LCODE  m_fcom5    00429H    0002AH
+                  @@LCODE  m_fcom6    00453H    0001FH
+                  @@LCODE  m_fdiv     00472H    0012FH
+                  @@LCODE  m_ftols    005A1H    00078H
+                  @@LCODE  m_ftolu    00619H    0002BH
+                  @@LCODE  m_lstof    00644H    00016H
+                  @@LCODE  m_lutof    0065AH    0004DH
+                  @@LCODE  m_fmul     006A7H    00151H
+         @@CODE                       007F8H    00012H  CSEG BASE
+                  @@CODE   r_main     007F8H    00000H
                   @@CODE   r_systeminit
-                                      00755H    00000H
-                  @@CODE   r_cg_cgc   00755H    00000H
+                                      007F8H    00000H
+                  @@CODE   r_cg_cgc   007F8H    00000H
                   @@CODE   r_cg_cgc_user
-                                      00755H    00000H
-                  @@CODE   Port       00755H    00000H
-                  @@CODE   Timer      00755H    00000H
+                                      007F8H    00000H
+                  @@CODE   Port       007F8H    00000H
+                  @@CODE   Timer      007F8H    00000H
                   @@CODE   Timer_User
-                                      00755H    00000H
+                                      007F8H    00000H
                   @@CODE   Serial_User
-                                      00755H    00012H
-         @@BASE                       00767H    0014DH  CSEG BASE
-                  @@BASE   r_main     00767H    00000H
+                                      007F8H    00012H
+         @@BASE                       0080AH    0014DH  CSEG BASE
+                  @@BASE   r_main     0080AH    00000H
                   @@BASE   r_systeminit
-                                      00767H    00000H
-                  @@BASE   r_cg_cgc   00767H    00000H
+                                      0080AH    00000H
+                  @@BASE   r_cg_cgc   0080AH    00000H
                   @@BASE   r_cg_cgc_user
-                                      00767H    00000H
-                  @@BASE   Port       00767H    00000H
-                  @@BASE   Timer      00767H    00000H
+                                      0080AH    00000H
+                  @@BASE   Port       0080AH    00000H
+                  @@BASE   Timer      0080AH    00000H
                   @@BASE   Timer_User
-                                      00767H    00004H
+                                      0080AH    00004H
                   @@BASE   Serial_User
-                                      0076BH    00149H
-         @@CNSTL                      008B4H    000CEH  CSEG PAGE64KP
-                  @@CNSTL  m_fcom5    008B4H    000CEH
-         @@CODEL                      00982H    01252H  CSEG
-                  @@CODEL  r_main     00982H    0052CH
+                                      0080EH    00149H
+* gap *                               00957H    00001H
+         @@CNSTL                      00958H    000CEH  CSEG PAGE64KP
+                  @@CNSTL  m_fcom5    00958H    000CEH
+         @@R_INIT                     00A26H    00664H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00A26H    00000H
+                  @@R_INIT r_main     00A26H    00660H
+                  @@R_INIT r_systeminit
+                                      01086H    00000H
+                  @@R_INIT r_cg_cgc   01086H    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      01086H    00000H
+                  @@R_INIT Port       01086H    00000H
+                  @@R_INIT Timer      01086H    00000H
+                  @@R_INIT Timer_User
+                                      01086H    00000H
+                  @@R_INIT Serial_User
+                                      01086H    00004H
+                  @@R_INIT @rom       0108AH    00000H
+         @@CODEL                      0108AH    0156CH  CSEG
+                  @@CODEL  r_main     0108AH    00846H
                   @@CODEL  r_systeminit
-                                      00EAEH    0002FH
-                  @@CODEL  r_cg_cgc   00EDDH    00017H
+                                      018D0H    0002FH
+                  @@CODEL  r_cg_cgc   018FFH    00017H
                   @@CODEL  r_cg_cgc_user
-                                      00EF4H    00005H
-                  @@CODEL  Port       00EF9H    00048H
-                  @@CODEL  Timer      00F41H    000BAH
+                                      01916H    00005H
+                  @@CODEL  Port       0191BH    00048H
+                  @@CODEL  Timer      01963H    000BAH
                   @@CODEL  Timer_User
-                                      00FFBH    00000H
+                                      01A1DH    00000H
                   @@CODEL  Serial_User
-                                      00FFBH    00BD9H
-         @@LCODEL                     01BD4H    001F4H  CSEG
-                  @@LCODEL exit       01BD4H    0001CH
-                  @@LCODEL m_log      01BF0H    00011H
-                  @@LCODEL m_fcom4    01C01H    00041H
-                  @@LCODEL m_flogx    01C42H    000C5H
-                  @@LCODEL m_fsubx    01D07H    00006H
-                  @@LCODEL m_fcom2    01D0DH    0003CH
-                  @@LCODEL m_fcom3    01D49H    0007FH
-* gap *                               01DC8H    01238H
-         @@CNST                       03000H    00094H  CSEG MIRRORP
+                                      01A1DH    00BD9H
+         @@LCODEL                     025F6H    001F4H  CSEG
+                  @@LCODEL exit       025F6H    0001CH
+                  @@LCODEL m_log      02612H    00011H
+                  @@LCODEL m_fcom4    02623H    00041H
+                  @@LCODEL m_flogx    02664H    000C5H
+                  @@LCODEL m_fsubx    02729H    00006H
+                  @@LCODEL m_fcom2    0272FH    0003CH
+                  @@LCODEL m_fcom3    0276BH    0007FH
+* gap *                               027EAH    00816H
+         @@CNST                       03000H    0058AH  CSEG MIRRORP
                   @@CNST   @cstart    03000H    00000H
-                  @@CNST   r_main     03000H    00094H
+                  @@CNST   r_main     03000H    0058AH
                   @@CNST   r_systeminit
-                                      03094H    00000H
-                  @@CNST   r_cg_cgc   03094H    00000H
+                                      0358AH    00000H
+                  @@CNST   r_cg_cgc   0358AH    00000H
                   @@CNST   r_cg_cgc_user
-                                      03094H    00000H
-                  @@CNST   Port       03094H    00000H
-                  @@CNST   Timer      03094H    00000H
+                                      0358AH    00000H
+                  @@CNST   Port       0358AH    00000H
+                  @@CNST   Timer      0358AH    00000H
                   @@CNST   Timer_User
-                                      03094H    00000H
+                                      0358AH    00000H
                   @@CNST   Serial_User
-                                      03094H    00000H
-* gap *                               03094H    14D6CH
+                                      0358AH    00000H
+* gap *                               0358AH    14876H
          ??OCDROM                     17E00H    00200H  CSEG
 
   MEMORY=RAM
   BASE ADDRESS=FCF00H   SIZE=03100H
          OUTPUT   INPUT    INPUT      BASE      SIZE
          SEGMENT  SEGMENT  MODULE     ADDRESS
-         @@DATA                       FCF00H    00518H  DSEG BASEP
+         @@DATA                       FCF00H    00526H  DSEG BASEP
                   @@DATA   @cstart    FCF00H    000BAH
-                  @@DATA   r_main     FCFBAH    00412H
+                  @@DATA   r_main     FCFBAH    00420H
                   @@DATA   r_systeminit
-                                      FD3CCH    00000H
-                  @@DATA   r_cg_cgc   FD3CCH    00000H
+                                      FD3DAH    00000H
+                  @@DATA   r_cg_cgc   FD3DAH    00000H
                   @@DATA   r_cg_cgc_user
-                                      FD3CCH    00000H
-                  @@DATA   Port       FD3CCH    00000H
-                  @@DATA   Timer      FD3CCH    00000H
+                                      FD3DAH    00000H
+                  @@DATA   Port       FD3DAH    00000H
+                  @@DATA   Timer      FD3DAH    00000H
                   @@DATA   Timer_User
-                                      FD3CCH    00000H
+                                      FD3DAH    00000H
                   @@DATA   Serial_User
-                                      FD3CCH    0004CH
-                  @@DATA   @rom       FD418H    00000H
-         @@INIT                       FD418H    0001EH  DSEG BASEP
-                  @@INIT   @cstart    FD418H    00000H
-                  @@INIT   r_main     FD418H    0001AH
+                                      FD3DAH    0004CH
+                  @@DATA   @rom       FD426H    00000H
+         @@INIT                       FD426H    00664H  DSEG BASEP
+                  @@INIT   @cstart    FD426H    00000H
+                  @@INIT   r_main     FD426H    00660H
                   @@INIT   r_systeminit
-                                      FD432H    00000H
-                  @@INIT   r_cg_cgc   FD432H    00000H
+                                      FDA86H    00000H
+                  @@INIT   r_cg_cgc   FDA86H    00000H
                   @@INIT   r_cg_cgc_user
-                                      FD432H    00000H
-                  @@INIT   Port       FD432H    00000H
-                  @@INIT   Timer      FD432H    00000H
+                                      FDA86H    00000H
+                  @@INIT   Port       FDA86H    00000H
+                  @@INIT   Timer      FDA86H    00000H
                   @@INIT   Timer_User
-                                      FD432H    00000H
+                                      FDA86H    00000H
                   @@INIT   Serial_User
-                                      FD432H    00004H
-                  @@INIT   @rom       FD436H    00000H
-         @@INIS                       FD436H    00000H  DSEG UNITP
-                  @@INIS   @cstart    FD436H    00000H
-                  @@INIS   r_main     FD436H    00000H
+                                      FDA86H    00004H
+                  @@INIT   @rom       FDA8AH    00000H
+         @@INIS                       FDA8AH    00000H  DSEG UNITP
+                  @@INIS   @cstart    FDA8AH    00000H
+                  @@INIS   r_main     FDA8AH    00000H
                   @@INIS   r_systeminit
-                                      FD436H    00000H
-                  @@INIS   r_cg_cgc   FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INIS   r_cg_cgc   FDA8AH    00000H
                   @@INIS   r_cg_cgc_user
-                                      FD436H    00000H
-                  @@INIS   Port       FD436H    00000H
-                  @@INIS   Timer      FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INIS   Port       FDA8AH    00000H
+                  @@INIS   Timer      FDA8AH    00000H
                   @@INIS   Timer_User
-                                      FD436H    00000H
+                                      FDA8AH    00000H
                   @@INIS   Serial_User
-                                      FD436H    00000H
-                  @@INIS   @rom       FD436H    00000H
-         @@DATS                       FD436H    00000H  DSEG UNITP
-                  @@DATS   @cstart    FD436H    00000H
-                  @@DATS   r_main     FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INIS   @rom       FDA8AH    00000H
+         @@DATS                       FDA8AH    00000H  DSEG UNITP
+                  @@DATS   @cstart    FDA8AH    00000H
+                  @@DATS   r_main     FDA8AH    00000H
                   @@DATS   r_systeminit
-                                      FD436H    00000H
-                  @@DATS   r_cg_cgc   FD436H    00000H
+                                      FDA8AH    00000H
+                  @@DATS   r_cg_cgc   FDA8AH    00000H
                   @@DATS   r_cg_cgc_user
-                                      FD436H    00000H
-                  @@DATS   Port       FD436H    00000H
-                  @@DATS   Timer      FD436H    00000H
+                                      FDA8AH    00000H
+                  @@DATS   Port       FDA8AH    00000H
+                  @@DATS   Timer      FDA8AH    00000H
                   @@DATS   Timer_User
-                                      FD436H    00000H
+                                      FDA8AH    00000H
                   @@DATS   Serial_User
-                                      FD436H    00000H
-                  @@DATS   @rom       FD436H    00000H
-         @@INITL                      FD436H    00000H  DSEG UNIT64KP
-                  @@INITL  @cstart    FD436H    00000H
-                  @@INITL  r_main     FD436H    00000H
+                                      FDA8AH    00000H
+                  @@DATS   @rom       FDA8AH    00000H
+         @@INITL                      FDA8AH    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FDA8AH    00000H
+                  @@INITL  r_main     FDA8AH    00000H
                   @@INITL  r_systeminit
-                                      FD436H    00000H
-                  @@INITL  r_cg_cgc   FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INITL  r_cg_cgc   FDA8AH    00000H
                   @@INITL  r_cg_cgc_user
-                                      FD436H    00000H
-                  @@INITL  Port       FD436H    00000H
-                  @@INITL  Timer      FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INITL  Port       FDA8AH    00000H
+                  @@INITL  Timer      FDA8AH    00000H
                   @@INITL  Timer_User
-                                      FD436H    00000H
+                                      FDA8AH    00000H
                   @@INITL  Serial_User
-                                      FD436H    00000H
-                  @@INITL  @rom       FD436H    00000H
-         @@DATAL                      FD436H    00000H  DSEG UNIT64KP
-                  @@DATAL  @cstart    FD436H    00000H
-                  @@DATAL  r_main     FD436H    00000H
+                                      FDA8AH    00000H
+                  @@INITL  @rom       FDA8AH    00000H
+         @@DATAL                      FDA8AH    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FDA8AH    00000H
+                  @@DATAL  r_main     FDA8AH    00000H
                   @@DATAL  r_systeminit
-                                      FD436H    00000H
-                  @@DATAL  r_cg_cgc   FD436H    00000H
+                                      FDA8AH    00000H
+                  @@DATAL  r_cg_cgc   FDA8AH    00000H
                   @@DATAL  r_cg_cgc_user
-                                      FD436H    00000H
-                  @@DATAL  Port       FD436H    00000H
-                  @@DATAL  Timer      FD436H    00000H
+                                      FDA8AH    00000H
+                  @@DATAL  Port       FDA8AH    00000H
+                  @@DATAL  Timer      FDA8AH    00000H
                   @@DATAL  Timer_User
-                                      FD436H    00000H
+                                      FDA8AH    00000H
                   @@DATAL  Serial_User
-                                      FD436H    00000H
-                  @@DATAL  @rom       FD436H    00000H
-         @@BITS                       FD436H    00000H  BSEG
-                  @@BITS   @cstart    FD436H.0  00000H.0
-                  @@BITS   r_main     FD436H.0  00000H.0
+                                      FDA8AH    00000H
+                  @@DATAL  @rom       FDA8AH    00000H
+         @@BITS                       FDA8AH    00000H  BSEG
+                  @@BITS   @cstart    FDA8AH.0  00000H.0
+                  @@BITS   r_main     FDA8AH.0  00000H.0
                   @@BITS   r_systeminit
-                                      FD436H.0  00000H.0
-                  @@BITS   r_cg_cgc   FD436H.0  00000H.0
+                                      FDA8AH.0  00000H.0
+                  @@BITS   r_cg_cgc   FDA8AH.0  00000H.0
                   @@BITS   r_cg_cgc_user
-                                      FD436H.0  00000H.0
-                  @@BITS   Port       FD436H.0  00000H.0
-                  @@BITS   Timer      FD436H.0  00000H.0
+                                      FDA8AH.0  00000H.0
+                  @@BITS   Port       FDA8AH.0  00000H.0
+                  @@BITS   Timer      FDA8AH.0  00000H.0
                   @@BITS   Timer_User
-                                      FD436H.0  00000H.0
+                                      FDA8AH.0  00000H.0
                   @@BITS   Serial_User
-                                      FD436H.0  00000H.0
-* gap *                               FD436H    02A9EH
+                                      FDA8AH.0  00000H.0
+* gap *                               FDA8AH    0244AH
          @@SEGREG                     FFED4H    00004H  DSEG AT
                   @@SEGREG @SEGREG    FFED4H    00004H
          @@RTARG0                     FFED8H    00008H  DSEG AT
